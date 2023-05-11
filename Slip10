@@ -1,0 +1,51 @@
+Slip 10:
+
+Write a Javascript program to accept name of student, change font color to red, font size to 18 if student name is present otherwise on clicking on empty text box display image which changes its size (Use onblur, onload, onmousehover, onmouseclick, onmouseup)
+
+
+
+<html>
+
+<body>
+
+Enter text :
+
+<input type="text" id="txtbox" onfocus=change(0) onblur=change(1)>
+
+<script>
+
+function change() {
+if (i == 0) {
+    document.getElementById("txtbox").style.backgroundColor =
+    "lightgrey";
+ document.getElementById("txtbox").style.color =
+    "blue";
+}
+    else {
+    document.getElementById("txtbox").style.backgroundColor = "white"; document.getElementById("txtbox").style.color =
+    "black";
+    }
+    }
+</script>
+</body>
+</html>
+
+    
+
+    
+   
+  
+
+   
+ 
+
+
+
+
+
+
+
+
+ 
+ 
+ 
