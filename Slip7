@@ -1,0 +1,51 @@
+Slip 7:
+Write Php Script to read " movie. xml " file and print all Movie Title and Actor Name of file using DOM Document Parser. "movie.xml " file should contain following information with at least 5 records with values.
+Movie_Info
+Movie_No ,Movie_Title , Actor_Name , Release_Year Soln
+movie.xml
+<? xml version = "1.0"? >
+<Movie_Info>
+<category = " Horror ">
+<Movie_No> 1 </Movie_No>
+<Movie_Title> Evil Return 1920 </Movie_Title>
+<Actor_Name>Jaidev Varma </ Actor_Name>
+ 
+<Release_Year> 2012 </Release_Year>
+</category>
+<category = "adventure ">
+<Movie_No> 2 </Movie_No>
+<Movie_Title> pirates of the carabian</Movie_Title>
+<Actor_Name> Johnny Depp </ Actor_Name>
+<Release_Year> 2017 </Release_Year>
+</category>
+<category = " Action ">
+<Movie_No> 3 </Movie_No>
+<Movie_Title> KGF2 </Movie_Title>
+<Actor_Name> Yesh </ Actor_Name>
+<Release_Year> 2022 </Release_Year>
+</category>
+<category = " Action ">
+<Movie_No> 4 </Movie_No>
+<Movie_Title> Doctor Strange </Movie_Title>
+<Actor_Name> Benedict Cumberbatch </ Actor_Name>
+<Release_Year> 2022 </Release_Year>
+</category>
+<category = " Anime ">
+<Movie_No> 5 </Movie_No>
+<Movie_Title>DrgonballZyada</Movie_Title>
+ 
+<Actor_Name> Goku </ Actor_Name>
+<Release_Year> 2018 </Release_Year>
+</category></Movie_In fo>
+
+movie.php
+<? php
+$doc = new DomDocument() ;
+$doc ->load(" movie.xml") ;
+$title = $doc ->getElementByTagName("Movie_Title") ;
+$name = $doc ->getElementByTagName("Actor_Name") ; echo " Movie " ; foreach($title as $val) { echo  $val -> text content ;
+}
+echo " Name " ; foreach($name as $value) { echo $value -> text content
+;
+}
+? >
