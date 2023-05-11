@@ -1,0 +1,24 @@
+Slip 3:
+Write a PHP script to accept username and password. If in the first three chances, username and password entered is correct then display second form with “Welcome message” otherwise display error message. [Use Session]
+Soln:
+Login. html
+<html>
+<body>
+<form method = "post" action = " check.php "> Username :< input type = " text " name = "unm"> Password :< input type = " password " name = " psw" >
+<input type = " submit " value = " submit " >
+</form>
+</body></htm l>
+
+check.php
+<? php
+Session_start( ) ; if ( $_REQUEST [ ' unm ' ] = = "Amol") and (
+$_REQUEST [ ' par ' ] = = " 1234 " ) echo " < form method = " post " action = " display. php>" ;
+ 
+</form> else
+echo " Wrong Information " < A href = login. html></a>;
+? >
+
+display. php
+<? Php
+echo " Welcome ! ! ! ! " ;
+? >
