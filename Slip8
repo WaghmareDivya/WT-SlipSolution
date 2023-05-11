@@ -1,0 +1,28 @@
+Write js to display message " Exams are near, have you started Preparing for? Using alert , prompt and confirm boxes accept proper input form user and display message accordingly.
+
+<html>
+<head>
+<script type="text/javascript"> function Value() {
+
+var val = prompt("Enter your Your Name : "); if(confirm("Hello " +val)==true){
+alert("Exams are near,have you started preparing for ? ");
+}
+else{
+alert("you cancel it");
+}
+}
+</script>
+</head>
+
+<body>
+
+<p> Click me: </p>
+
+<form>
+<input type="button" value="Click Me" onclick="Value()" />
+ 
+</form>
+</body>
+
+</html>
+
