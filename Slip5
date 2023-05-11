@@ -1,0 +1,60 @@
+Slip5:
+Write a script to create XML file named “Item.xml”
+<Item>
+<ItemName>	</ItemName>
+<ItemPrice>	</ItemPrice>
+<Quantity>	</Quantity>
+</Item>
+Store the details of 5 Items of different Types
+2)	Link “ Item. Xml” file to the CSS style sheet and get well formatted output as given below
+i)	ItemName :
+Color : red;
+Font-family : copperplate Gothic Light; Font-size : 16pt;
+Font :bold;
+ii)	ItemPrice and Quantity color: yellow;
+font-family:Arial; font-size:12 pt; font:bold;
+
+
+Soln:
+item.xml
+<? xml version="1.0"? >
+<?xml-stylesheet type= " text/css " href= "item.css"? >
+<product>
+<Item>
+<ItemName> Bag </ItemName>
+<ItemPrice>350 </ItemPrice>
+ 
+<Quantity> 5 </Quantity>
+</Item>
+<Item>
+<ItemName>NoteBook</ItemName>
+<ItemPrice> 200 </ItemPrice>
+<Quantity> 6 </Quantity>
+</Item>
+<Item>
+<ItemName>Pen </ItemName>
+<ItemPrice> 50 </ItemPrice>
+<Quantity> 10 </Quantity>
+</Item>
+<Item>
+<ItemName> Mobile </ItemName>
+<ItemPrice> 15000 </ItemPrice>
+<Quantity> 2 </Quantity>
+</Item>
+<Item>
+<ItemName> Cover </ItemName>
+<ItemPrice> 40 </ItemPrice>
+<Quantity> 4</Quantity>
+</Item></produc t>
+ 
+item.css ItemName {
+Color : red ;
+Font-family : copper plate Gothic light; Font-size:16pt;
+Font : bold;
+
+}
+
+ItemPrice and Quantity { Color : yellow ;
+Font-family : Arial; Font-size : 12pt; Font : bold ;
+}
+ 
